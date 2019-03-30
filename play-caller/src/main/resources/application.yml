@@ -1,0 +1,12 @@
+app:
+  name: play
+
+dubbo:
+  registry.url: multicast://224.5.6.7:1234
+  consumer:
+    timeout: 2000
+    dep.check: false
+    retries: 0
+    ref.version: V1
+
+

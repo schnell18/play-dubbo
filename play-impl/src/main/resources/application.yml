@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+app:
+  name: play
+
+dubbo:
+  registry.url: multicast://224.5.6.7:1234
+  provider:
+    port: 20880
+    version: V1
+    retries: 0
+    timeout: 2000
+    longtimeout: 10000
+  consumer:
+    timeout: 2000
+    depCheck: false
+    retries: 0
+    version: V1
+
+
